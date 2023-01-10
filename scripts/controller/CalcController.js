@@ -18,6 +18,10 @@ class CalcContoller {
         }, 1000);
     }
 
+    initializeButtons(){
+        document.querySelectorAll('#buttons > g');
+    }
+
     setDisplayDateTime(){
         this.displayDate = this.currentDate.toLocaleDateString(this._locale);
             this.displayTime = this.currentDate.toLocaleTimeString(this._locale);
